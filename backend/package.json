@@ -1,0 +1,21 @@
+{
+  "name": "support-copilot-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed.js",
+    "seed-docs": "node seed-docs.js",
+    "eval": "node eval.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.16",
+    "pdf-parse": "^1.1.1"
+  }
+}

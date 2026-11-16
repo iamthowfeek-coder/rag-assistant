@@ -1,0 +1,29 @@
+Questions to try on the customer form (http://localhost:5173/ask)
+
+Load the sample documents first: run "npm run seed-docs" in the backend folder,
+or upload everything in the sample-docs folder on the Knowledge base page.
+Do NOT upload this file: it is only a list of test questions.
+
+SHOULD GET A DRAFT (the answer is in the documents)
+1.  How long do I have to return something?             -> return-policy
+2.  How long does a refund take to appear?              -> return-policy
+3.  Do you ship to other countries?                     -> shipping-faq
+4.  My package seems lost, what do I do?                -> shipping-faq
+5.  How long is the warranty?                           -> warranty-and-repairs
+6.  How much is a battery replacement?                  -> warranty-and-repairs
+7.  I forgot my password, how do I reset it?            -> account-and-passwords
+8.  Which payment methods do you accept?                -> payments-and-billing
+9.  What are your support hours?                        -> contact-and-support-hours
+10. Do you have phone support?                          -> contact-and-support-hours
+
+SHOULD BE ESCALATED (the answer is NOT in the documents)
+11. Do you offer student discounts?
+12. Do you have a shop in London?
+13. Can I buy a gift card?
+
+Optional PDF test: upload pdf-test/product-care-guide.pdf, then ask
+14. Can I clean it with alcohol wipes?                  -> product-care-guide (the answer is no)
+
+Note: with an AI key, questions 11 to 13 are escalated because the AI is told to answer only from the
+documents. Without a key, the basic template drafts anything that shares a word with a document, so
+only a question with no matching word is escalated.
